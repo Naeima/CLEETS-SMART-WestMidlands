@@ -719,7 +719,7 @@ app.layout = html.Div([
     # Live warning feed + table
     html.Div([
         html.Div([
-            html.H2("Live EA Warnings"),
+            html.H2("Live EA Warnings (UK)"),
             html.Div(id='last-update', style={'fontSize': '12px', 'opacity': 0.7, 'marginBottom': '6px'}),
             html.Div(id='live-feed',
                      style={'maxHeight': '280px', 'overflowY': 'auto', 'border': '1px solid #ccc',
@@ -889,4 +889,5 @@ def update_time_series(statuses, payments):
 
 if __name__ == "__main__":
     app.run_server(debug=True)
+
 
