@@ -64,7 +64,7 @@ def load_csv_from_gsheet(url_or_id: str, max_retries: int = 5, timeout: int = 30
     raise last_err or RuntimeError("Unknown error reading Google Sheet")
 
 # =========================
-# Load base charger data (from your provided Sheet)
+# Load base charger data (from the provided Sheet)
 # =========================
 SHEET_URL = "https://docs.google.com/spreadsheets/d/1xjD-NH6rX7_ueOU89jxZsKXahURfRAyA/edit?usp=sharing&ouid=118120094376416558501&rtpof=true&sd=true"
 df = load_csv_from_gsheet(SHEET_URL)
@@ -889,5 +889,6 @@ def update_time_series(statuses, payments):
 
 if __name__ == "__main__":
     app.run_server(debug=True)
+
 
 
